@@ -5,11 +5,11 @@ export default function Footer() {
       <div className="bg-black dark:bg-white rounded-3xl p-12 mb-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white dark:text-black">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p className="text-white/90 dark:text-black/90 text-lg mb-10 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities and interesting projects. 
-            Let's build something amazing together!
+            I&apos;m always open to discussing new opportunities and interesting projects. 
+            Let&apos;s build something amazing together!
           </p>
           
           {/* Contact Info */}

@@ -10,7 +10,7 @@ export default function About() {
         </div>
         <div className="bg-white dark:bg-black border-2 border-black dark:border-white rounded-3xl p-10 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
           <p className="text-lg md:text-xl text-black/80 dark:text-white/80 leading-relaxed mb-6">
-            I'm a passionate <span className="font-bold text-black dark:text-white">Software Developer</span> who loves building user-focused applications and solving complex problems with elegant code. 
+            I&apos;m a passionate <span className="font-bold text-black dark:text-white">Software Developer</span> who loves building user-focused applications and solving complex problems with elegant code. 
             Currently working as a Software Developer Engineer at <span className="font-semibold">MountBlue Technologies</span>, deployed at <span className="font-semibold">Magicpin</span>, 
             where I contribute to production-grade systems that make a real impact.
           </p>
