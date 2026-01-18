@@ -2,18 +2,18 @@ export default function Footer() {
   return (
     <footer id="contact" className="py-16 px-4 sm:px-6 lg:px-8">
       {/* Let's Connect Section */}
-      <div className="bg-black dark:bg-white rounded-3xl p-12 mb-8">
+      <div className="bg-white dark:bg-black rounded-3xl p-12 mb-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white dark:text-black">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black dark:text-white">
             Let&apos;s Connect
           </h2>
-          <p className="text-white/90 dark:text-black/90 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-black/90 dark:text-white/90 text-lg mb-10 max-w-2xl mx-auto">
             I&apos;m always open to discussing new opportunities and interesting projects. 
             Let&apos;s build something amazing together!
           </p>
           
           {/* Contact Info */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10 text-white dark:text-black">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10 text-black dark:text-white">
             <div className="flex items-center gap-3">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
