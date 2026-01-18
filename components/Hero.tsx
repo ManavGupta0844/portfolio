@@ -42,15 +42,16 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Right Column - Profile Image (shown first on mobile) */}
-          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-black dark:border-white shadow-2xl">
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-black dark:bg-white rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-black dark:border-white shadow-2xl group-hover:scale-105 transition-transform duration-300">
                 {mounted && !imageError ? (
                   <Image
                     src={imageSrc}
                     alt="Manav Gupta"
                     fill
-                    className="object-cover"
+                    className="object-cover transition-opacity duration-300"
                     priority
                     onError={() => setImageError(true)}
                     key={imageSrc} // Force re-render when image changes
@@ -65,28 +66,28 @@ export default function Hero() {
           </div>
 
           {/* Left Column - Text Content (shown second on mobile) */}
-          <div className="text-center lg:text-left space-y-8 order-2 lg:order-1">
+          <div className="text-center lg:text-left space-y-8 order-2 lg:order-1 animate-fade-in-up">
             <div className="space-y-4">
-              <p className="text-black/60 dark:text-white/60 font-semibold text-lg tracking-wide uppercase">
+              <p className="text-black/60 dark:text-white/60 font-semibold text-lg tracking-wide uppercase animate-fade-in">
                 Software Developer
               </p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-black dark:text-white">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-black dark:text-white animate-fade-in-up delay-100">
                 Manav Gupta
               </h1>
-              <p className="text-xl md:text-2xl text-black/80 dark:text-white/80 font-medium">
+              <p className="text-xl md:text-2xl text-black/80 dark:text-white/80 font-medium animate-fade-in-up delay-200">
                 Building user-focused applications and solving problems with code
               </p>
-              <p className="text-lg text-black/70 dark:text-white/70 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-lg text-black/70 dark:text-white/70 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-300">
                 Software Developer Engineer at MountBlue Technologies, deployed at Magicpin. 
                 Contributing to production-grade systems with expertise in Java, TypeScript, JavaScript, 
                 React, Node.js, and the MERN stack.
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4 animate-fade-in-up delay-400">
               <a
                 href="mailto:gmanav405@gmail.com"
-                className="px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-xl font-semibold hover:opacity-80 transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-xl font-semibold hover:opacity-80 hover:scale-105 transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -95,7 +96,7 @@ export default function Hero() {
               </a>
               <a
                 href="#projects"
-                className="px-8 py-4 border-2 border-black dark:border-white text-black dark:text-white rounded-xl font-semibold hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-4 border-2 border-black dark:border-white text-black dark:text-white rounded-xl font-semibold hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black hover:scale-105 transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -104,10 +105,10 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="flex justify-center lg:justify-start space-x-6 pt-4">
+            <div className="flex justify-center lg:justify-start space-x-6 pt-4 animate-fade-in-up delay-500">
               <a
                 href="tel:+918544970148"
-                className="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors p-3 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg"
+                className="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors p-3 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg hover:scale-110"
                 aria-label="Phone"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -116,7 +117,7 @@ export default function Hero() {
               </a>
               <a
                 href="mailto:gmanav405@gmail.com"
-                className="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors p-3 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg"
+                className="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors p-3 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg hover:scale-110"
                 aria-label="Email"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -128,7 +129,7 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/manav-gupta2804"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors p-3 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg"
+                className="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors p-3 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

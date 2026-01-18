@@ -7,6 +7,7 @@ import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Education />
       <Certifications />
       <Footer />
+      <ScrollToTop />
     </main>
   );
 }

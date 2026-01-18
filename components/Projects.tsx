@@ -36,10 +36,10 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-white dark:bg-black border-2 border-black dark:border-white rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-1 transition-all duration-300"
+              className="group bg-white dark:bg-black border-2 border-black dark:border-white rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-2 transition-all duration-300"
             >
               <div className="mb-6">
-                <span className="inline-block px-4 py-2 text-sm font-bold text-black dark:text-white bg-black/5 dark:bg-white/5 rounded-full border border-black dark:border-white">
+                <span className="inline-block px-4 py-2 text-sm font-bold text-black dark:text-white bg-black/5 dark:bg-white/5 rounded-full border border-black dark:border-white group-hover:bg-black/10 dark:group-hover:bg-white/10 transition-colors">
                   {project.stack}
                 </span>
               </div>
@@ -53,7 +53,7 @@ export default function Projects() {
                 {project.technologies.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1.5 text-sm font-medium bg-black/5 dark:bg-white/5 text-black dark:text-white rounded-lg border border-black/10 dark:border-white/10"
+                    className="px-3 py-1.5 text-sm font-medium bg-black/5 dark:bg-white/5 text-black dark:text-white rounded-lg border border-black/10 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
                   >
                     {tech}
                   </span>
