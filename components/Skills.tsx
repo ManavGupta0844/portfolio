@@ -3,8 +3,8 @@
 const skillCategories = [
   {
     category: "Top Skills",
-    skills: ["TypeScript", "Next.js", "Angular"],
-    highlight: true,
+    skills: ["TypeScript", "Next.js", "Java"],
+    highlight: false,
   },
   {
     category: "Languages",
