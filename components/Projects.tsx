@@ -1,24 +1,17 @@
 const projects = [
   {
-    title: "Expense Tracker Web Application",
-    stack: "MERN Stack",
-    description:
-      "Full-stack expense management system with authentication and CRUD operations. Features responsive UI with secure backend APIs for managing personal finances.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-  },
-  {
-    title: "Trello Clone",
-    stack: "React + Redux Toolkit",
-    description:
-      "Implemented boards, lists, cards, and checklist management using Trello REST API. Managed complex state with Redux slices for seamless user experience.",
-    technologies: ["React", "Redux Toolkit", "REST API"],
-  },
-  {
     title: "EventBuddy",
-    stack: "Full Stack Project",
+    stack: "React.js, Java, PostgreSQL, JWT",
     description:
-      "Built backend using Node.js, Express, Sequelize, PostgreSQL with JWT-based authentication. Developed admin dashboard and user-facing event flows using React, MUI, Redux.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Sequelize", "MUI", "Redux"],
+      "Event management platform with multi-role authentication, admin dashboard, and user-facing booking flows backed by a relational database.",
+    technologies: ["React.js", "Java", "PostgreSQL", "JWT"],
+  },
+  {
+    title: "Expense Tracker",
+    stack: "React.js, Java, Express, MongoDB, JWT",
+    description:
+      "Full-stack expense management app with authentication, CRUD operations, and responsive UI.",
+    technologies: ["React.js", "Java", "Express", "MongoDB", "JWT"],
   },
 ];
 

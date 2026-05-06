@@ -1,8 +1,8 @@
 const education = [
   {
-    degree: "Bachelor of Engineering - BE, Computer Science",
+    degree: "BE - Computer Science & Engineering",
     institution: "Chitkara University",
-    period: "November 2021 - August 2025",
+    period: "2021 - 2025",
     cgpa: "8.74",
   },
 ];

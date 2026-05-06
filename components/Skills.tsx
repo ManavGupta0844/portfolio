@@ -2,25 +2,25 @@
 
 const skillCategories = [
   {
-    category: "Top Skills",
-    skills: ["TypeScript", "Next.js", "Java"],
-    highlight: false,
-  },
-  {
     category: "Languages",
-    skills: ["JavaScript", "TypeScript", "Go", "Java"],
+    skills: ["Java", "JavaScript", "TypeScript", "Python"],
+    highlight: true,
   },
   {
-    category: "Frontend",
-    skills: ["React.js", "Next.js", "React Native", "Angular", "Tailwind CSS", "Redux"],
+    category: "Frameworks",
+    skills: ["Node.js", "React.js", "Next.js", "React Native", "Flask"],
   },
   {
-    category: "Backend & Data",
-    skills: ["Node.js", "NestJS", "MongoDB", "PostgreSQL", "Redis", "ElasticSearch"],
+    category: "Databases",
+    skills: ["MongoDB", "PostgreSQL", "MySQL", "BigQuery"],
   },
   {
-    category: "Tools & Practices",
-    skills: ["Git", "REST APIs", "JWT", "VS Code"],
+    category: "Tools",
+    skills: ["Git", "Docker", "Elasticsearch", "Redis"],
+  },
+  {
+    category: "AI Tools",
+    skills: ["Cursor", "GitHub Copilot", "Claude Code"],
   },
 ];
 

@@ -10,11 +10,6 @@ const certifications = [
     description: "Validated expertise in React.js development and frontend engineering",
   },
   {
-    title: "Principles of Leadership: Leading Oneself",
-    issuer: "University of Colorado Boulder (Coursera)",
-    description: "Leadership and personal development certification",
-  },
-  {
     title: "Generative AI Specialization",
     issuer: "Google Cloud",
     description: "45+ hours of training with 24 skill badges in Generative AI technologies",
